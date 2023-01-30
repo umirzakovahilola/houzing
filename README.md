@@ -1,8 +1,8 @@
 # Getting Started with Paxtachi IT Center
 
-This project was bootstrapped with [Housing](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Housing](https://github.com/umirzakovahilola/houzing).
 
-## can see Demo
+## can see Demo [Housing](https://netlify.com/houzing).
 
 ## Available Scripts
 
