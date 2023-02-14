@@ -1,3 +1,4 @@
+import Button  from '../Generic/Button'
 import React from 'react'
 import {  Outlet , useNavigate } from 'react-router-dom'
 import { navbar } from '../../utils/navbar'
@@ -15,19 +16,21 @@ export const Home = () => {
       </Section>
       <Section>
        {
-        navbar.map(({title,path},index)=>{
-          return(
+        navbar.map(({title,path,hidden},index)=>{
+          return !hidden &&(
             <Link className={({isActive}) => isActive && 'active'} key={index} to={path}>{title}</Link>
           )
         })
        } 
       </Section>
       
-      <Section><button>Login</button></Section>
+      <Section>
+        <Button onClick={()=> navigate('/signIn')} type='dark'>Login</Button>
+      </Section>
       </Wrapper>
       <Outlet/>
     </Container>
   )
 }
-
+ 
 export default  Home
