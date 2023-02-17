@@ -4,7 +4,7 @@ import { Container } from './style'
 
 export const Home = () => {
   return (
-    <Container>Home
+    <Container>Home Home
      <Button>Sending</Button>
      <Input placeholder='Country'/>
     </Container>
