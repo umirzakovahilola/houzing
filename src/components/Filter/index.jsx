@@ -4,7 +4,7 @@ import { Button, Input } from '../Generic'
 import { Container, Icon, Section, Wrapper } from './style'
 
 
-export const Filter = () => {
+export const Filterr = () => {
   const countryRef=useRef()
   const regionRef=useRef()
   const cityRef=useRef()
