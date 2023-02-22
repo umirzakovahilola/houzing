@@ -4,7 +4,7 @@ import { Button, Input } from '../Generic'
 import { Container, Icon, Section, Wrapper } from './style'
 
 
-export const Filterr = () => {
+export const Filter = () => {
   const countryRef=useRef()
   const regionRef=useRef()
   const cityRef=useRef()
@@ -30,7 +30,7 @@ export const Filterr = () => {
      <Input ref={cityRef} placeholder='City'/>
      <Input ref={zipCodeRef} placeholder='Zip code'/>
     </Section>
-    <h1 className='subTitle'>Apartment info</h1>
+    <h1 className='subTitle'>Apartment Info</h1>
     <Section>
     <Input ref={roomsRef} placeholder='Rooms'/>
     <Input ref={sizeRef} placeholder='Size'/>
