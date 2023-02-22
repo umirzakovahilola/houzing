@@ -8,7 +8,7 @@ export const Home = () => {
   return (
     <Container>Home
      <Button>Send</Button>
-     <Input placeholder='Country'/>
+     <Input width='200 ' placeholder='Country'/>
       </Container>
   )
 }

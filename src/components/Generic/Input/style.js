@@ -32,7 +32,7 @@ const getType=()=>{
 }
 
 export const Container=styled.input`
-width: ${({width})=>width ? `${width}px`  : '200px' };
+width: ${({width})=>width ? `${width}px`  : '100%' };
 height: ${({height})=>height ? `${height}px`  : '44px' };
 /* display: flex;
 align-items: center;
@@ -40,10 +40,22 @@ justify-content: center; */
 outline:none;
 border:1px solid #e6e9ec;
 padding: 5px 20px;
-padding-left:10px;
+padding-left:${({icon})=>icon? '30px' : '10px'};
 /* margin-top:10px; */
 border-radius: 2px;
 font-size:${({fontSize})=>fontSize ? fontSize :'14px'};
 /* cursor: pointer; */
 /* ${getType} */
+`
+
+export const Wrapper=styled.div`
+width: 100%;
+display: flex;
+align-items: center;
+position: relative;
+`
+
+export const Icon=styled.div`
+position: absolute;
+margin-left: 5px;
 `

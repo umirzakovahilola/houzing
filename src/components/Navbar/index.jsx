@@ -3,6 +3,7 @@ import React from 'react'
 import {  Outlet , useNavigate } from 'react-router-dom'
 import { navbar } from '../../utils/navbar'
 import { Container, Section,Logo, Wrapper,Link } from './style'
+import Filter from '../Filter'
 
 
 export const Home = () => {
@@ -25,9 +26,10 @@ export const Home = () => {
       </Section>
       
       <Section>
-        <Button onClick={()=> navigate('/signIn')} type='dark'>Login</Button>
+        <Button onClick={()=> navigate('/signIn')} type='dark'> Login</Button>
       </Section>
       </Wrapper>
+    <Filter/>
       <Outlet/>
     </Container>
   )
