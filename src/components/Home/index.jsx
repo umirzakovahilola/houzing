@@ -6,7 +6,7 @@ import { Container } from './style'
 
 export const Home = () => {
   return (
-    <Container>Home.....
+    <Container>Home..... 
      <Button>Send</Button>
      <Input width='200 ' placeholder='Country'/>
       </Container>
