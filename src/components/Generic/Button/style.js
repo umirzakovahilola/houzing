@@ -1,17 +1,19 @@
-import { type } from "@testing-library/user-event/dist/type";
+
+
 import styled from "styled-components";
 
-const getType=()=>{
-  switch ({type}){
+const getType=({type})=>{
+  switch (type) {
     case 'dark':return{
       background:'transparent',
       color:'#fff',
       border:'1px solid #fff'
         }
-    case 'light':return{
+    case 'light':return {
       background:'transparent',
       color:'#0D263B',
-      border:'1px solid #fff'
+      border:'1px solid #e6e9ec'
+      
        }
         case 'primary':return {
           background:'#0061DF',

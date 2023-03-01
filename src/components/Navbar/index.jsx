@@ -18,7 +18,9 @@ export const Home = () => {
       <Section>
        {
         navbar.map(({title,path,hidden},index)=>{
+
           return !hidden &&(
+
             <Link className={({isActive}) => isActive && 'active'} key={index} to={path}>{title}</Link>
           )
         })
@@ -26,8 +28,10 @@ export const Home = () => {
       </Section>
       
       <Section>
+
         <Button onClick={()=> navigate('/signIn')} type='dark'> Login</Button>
       </Section>
+
       </Wrapper>
     <Filter/>
       <Outlet/>

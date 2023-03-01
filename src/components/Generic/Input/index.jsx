@@ -1,3 +1,4 @@
+
 import React, {forwardRef} from 'react'
 import { Container, Wrapper, Icon } from './style'
 
@@ -37,5 +38,4 @@ const Input=forwardRef(({
       </Wrapper>
     )
   })
-
 export default Input

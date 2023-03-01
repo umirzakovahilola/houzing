@@ -1,3 +1,4 @@
+
 import { type } from "@testing-library/user-event/dist/type";
 import styled from "styled-components";
 
@@ -58,4 +59,5 @@ position: relative;
 export const Icon=styled.div`
 position: absolute;
 margin-left: 5px;
+
 `

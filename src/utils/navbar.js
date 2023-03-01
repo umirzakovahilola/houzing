@@ -10,14 +10,17 @@ export const navbar=[
         title:'Home',
         path:'/home', 
         hidden:false,
-        private:false},
+        private:false
+    },
     {
         id:useId,
         element:<PropertiesPage/>,
         title:'Properties',
         path:'/properties',
         hidden:false,
-        private:false},
+
+        private:false
+    },
 
     {
         id:useId,
@@ -25,5 +28,16 @@ export const navbar=[
         title:'signIn',
         path:'/signIn',
         hidden: true,
-        private:false},    
+        private:false,    
+     
+    },
+    {
+        id:useId,
+        element:<h1>Sign In</h1>,
+        title:'signIn',
+        path:'/signIn',
+        hidden:true,
+        private:false
+    },
+
 ]
